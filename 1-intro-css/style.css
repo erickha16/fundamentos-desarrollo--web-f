@@ -1,0 +1,40 @@
+*{
+    margin: 10px;
+    padding: 0;
+    font-family: "Gravitas One", serif;
+}
+
+body{
+    background-color: darkslategray;
+}
+
+h1{
+    color: beige;
+}
+
+p{
+    text-decoration: underline;
+    color: beige;
+}
+
+a{
+    text-decoration: none;
+    color: beige;
+    background-color: chocolate;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.ball{
+    background-color: gray;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 3px solid black;
+}
+
+.text-important{
+    font-size: 2rem; /*1rem == 16px*/
+    background-color: blueviolet;
+    font-style: oblique;
+}
