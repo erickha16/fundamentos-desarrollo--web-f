@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: hsl(46.63deg 88.3% 63.14%);
+}
+
+.card{
+    background-color: white;
+    /* margin-top: 100px; */
+    margin: 100px auto; /* 100px == distancia en X y auto == disnatcia en Y. El auto lo centra*/
+    width: 430px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0px black; /* ancho de la línea en X, ancho de la línea en Y, difuminado, color*/
+}
+
+.card > img{ /* El > hace que sólo afecte a las etiquetas img que sean hijas directas de card*/
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.card span{ /* De esta manera afectará a tosos los elementos span denntro de class*/
+    background-color: hsl(46.63deg 88.3% 63.14%);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.card small{
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.card > p{
+    color: grey;
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+.user_info_tag{
+    margin-top: 20px;
+}
+
+.user_info_tag img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.user_info_tag p{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+}
