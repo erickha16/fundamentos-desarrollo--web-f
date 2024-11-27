@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: blueviolet;
+    text-shadow: 1px 1px 1px black;
+}
+
+a{
+    text-decoration: none;
+    /* color: inherit; */
+    color: aqua;
+    background-color: blueviolet;
+}
+
+.diferente{
+    text-shadow: initial;
+    color: brown;
+}
+
+h1 span{
+    background-color: aqua;
+}
+
+.container{
+
+}
+
+/* Ejemplo de especificidad */
+h1 {
+    color: black;
+}
+
+.blue{
+    color: blue;
+}
+
+#red {
+    color: red;
+}
