@@ -12,7 +12,7 @@ body{
 .card{
     background-color: white;
     /* margin-top: 100px; */
-    margin: 100px auto; /* 100px == distancia en X y auto == disnatcia en Y. El auto lo centra*/
+    margin: 100px auto; /* 100px == distancia en Y y auto == disnatcia en X. El auto lo centra*/
     width: 430px;
     padding: 25px;
     border-radius: 15px;

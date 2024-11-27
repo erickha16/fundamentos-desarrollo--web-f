@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+/* PADRE */
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+    width: 600px;
+    height: 600px;
+    background-color: blueviolet;
+    border: 3px solid black;
+    margin: 40px auto;/* 40px == distancia en Y y auto == disnatcia en X. El auto lo centra*/
+
+}
+
+/* Hijos */
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color: powderblue;
+    border-radius: 50%;
+    border: inherit;
+    color: white;
+}
