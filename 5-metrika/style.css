@@ -14,13 +14,20 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 900px;
+    max-width: 1070px;
     margin: auto;
     /* background-color: blueviolet; */
 }
 
 nav ul{
+    width: 250px;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 25px;
+    
 }
 
 section{
@@ -33,6 +40,7 @@ section{
     /* background-color: brown; */
     display: flex;
     gap: 20px;
+    padding: 20px;
     margin: auto;
 }
 
@@ -50,7 +58,6 @@ section{
 }
 
 .card-box-50{
-    background-color: cadetblue;
     width: 46%;
     display: flex;
     justify-content: center;
@@ -58,7 +65,6 @@ section{
 }
 
 .card-box-100{
-    background-color: aquamarine;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -69,13 +75,49 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(11, 150, 150);
+    background-color: #0FA3CC;
 }
 
-.blue{background-color: cyan;}
-.green{background-color: aquamarine;}
-.red{background-color: rgb(189, 56, 56);}
-.pink{background-color: pink;}
-.orange{background-color: orange;}
-.yellow{background-color: yellow;}
+.blue{background-color: #50B2A3;}
+.green{background-color: #51B28A;}
+.red{background-color: #C85241;}
+.pink{background-color: #D8447B;}
+.orange{background-color: #D7733C;}
+.yellow{background-color: #D9912A;}
+
+.card img{
+    height: 50px;
+}
+
+.middle img{
+    height: 125px;
+}
+
+
+
+
+/* --------------------------------------------- Footer -----------------------------*/
+footer{
+    margin-top: 60px;
+}
+
+.content-footer{
+    max-width: 1070px;
+    padding: 20px;
+    margin: auto;
+    background-color: #EAEAEA;
+}
+.contacto{
+    max-width: 1100px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.contacto > a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
 
