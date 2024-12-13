@@ -184,3 +184,49 @@ header{
     cursor: pointer;
 }
 
+/* --------------------------BREAKPOINTS----------------------------- */
+
+
+@media screen and (max-width: 800px){
+    body{
+        /* background-color: tomato; */
+    }
+    .welcome-content{
+        flex-direction: column-reverse;
+    }
+    .col-2 {
+        /* background-color: rgb(73, 19, 123) !important; */
+        flex: none;
+        height: 300px;
+    }
+    .img-pizza, .img-hoja, .img-tomato {
+        width: 230px;
+    }
+
+    .productos-content {
+        flex-wrap: wrap;
+    }
+
+    .product-card{
+        width: 49%;
+        flex: none;
+    }
+}
+
+
+/* Breakpoint mobile */
+@media screen and (max-width:576px){
+    body{
+        /* background-color: blueviolet; */
+    }
+
+    .productos-content {
+        flex-wrap: wrap;
+    }
+
+    .product-card{
+        width: 100%;
+        flex: none;
+    }
+
+}
