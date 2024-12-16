@@ -55,6 +55,7 @@ header > a{
 .proyecto{
     display: flex;
     justify-content: center;
+    text-align: center;
     background-color: rgb(51, 47, 58);
     margin: 10px;
     padding: 20px;
