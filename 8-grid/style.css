@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+/* PADRE */
+.container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+
+    width: 600px;
+    height: 600px;
+    background-color: blueviolet;
+    border: 3px solid black;
+    margin: 40px auto;/* 40px == distancia en Y y auto == disnatcia en X. El auto lo centra*/
+    padding: 10px;
+
+}
+
+/* Hijos */
+.ball{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100px;
+    height: 100px; */
+    background-color: powderblue;
+    border-radius: 10%;
+    border: inherit;
+    color: black;
+}
+
+.tomato{
+    background-color: tomato;
+    grid-column-start: 2; /* A partir de qué columna va a comenzar */
+    grid-column-end: 4; /* A partir de qué columna va a terminar */
+    grid-row-start: 2; /* A partir de qué fila va a comenzar */
+    grid-row-end: 3; /* A partir de qué fila va a terminar */
+}
+
+.orange{
+    background-color: orange;
+    /* grid-column-start: 4;
+    grid-column-end: 5; */
+    grid-column: 4/5; /* Esto simplifica las dos líneas de arriba */
+    /* grid-row-start: 2;
+    grid-row-end: 4; */
+    grid-row: 2/4;  /* Esto simplifica las dos líneas de arriba */
+}
