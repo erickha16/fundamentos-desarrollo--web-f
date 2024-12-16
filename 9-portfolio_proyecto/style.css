@@ -1,0 +1,280 @@
+/* ---------------------------------- Configuración base ---------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: #78B3CE;
+    color: #FBF8EF;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    background-color: #78B3CE; 
+    position: sticky;
+    top: 0;
+    z-index: 2;
+} 
+
+.container{
+    max-width: 900px;
+    /* background-color: #6c6c6c; */
+    margin: auto;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.header-content ul {
+    display: flex;
+    gap: 10px;
+}
+
+/* ----------------------------------  Sección Introduccion ---------------------------------- */
+
+.intro-content{
+    display: flex;
+    padding: 50px 0;
+}
+.col-1{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex: 2;
+}
+.col-1 h3{font-size: 3rem;}
+.col-1 span{
+    text-decoration: underline;
+    text-decoration-color: #F96E2A;
+}
+.col-1 a{
+    text-align: center;
+    color: #FBF8EF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background-color: #F96E2A;
+    width: 170px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.col-1 a:hover{
+    transform: scale(1.02); /* Hace que el elemento crezca un poco */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Añade una sombra más fuerte */
+}
+
+.col-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+.img-impresora, .img-cat, .img-pla{
+    position: absolute;
+}
+.img-impresora{
+    height: 90%;
+    width: 90%;
+}
+
+.img-pla{
+  width: 40%;  
+  right: 10px;
+  top: 0;
+}
+.img-cat{
+    width: 40%;
+    left: 20px;
+    bottom: 40px;
+    border-radius: 40px;
+}
+
+
+/* ---------------------------------- Sección productos ---------------------------------- */
+
+#productos{
+    background-color: #C9E6F0;
+}
+#productos > .container{
+    background-color: #FBF8EF;
+    max-width: 1200px;
+}
+.productos-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 20px;
+}
+.product-card{
+    flex: 1;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    max-height: 300px;
+}
+
+
+.product-card:hover .card-hover{ /* Esto es para aplicarle el hover a la clase hija dentro de .product-card. Siguiendo el sentido de, toco a product-card y reacciona card-hover */
+    /* opacity: .2; */
+    opacity: 1;
+}
+
+/* Card-hover */
+.card-hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.51);
+    top:0;
+    left: 0;
+
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+/* Card-hover header */
+.card-hover-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-hover-header a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.btn-favorito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(244, 48, 48);
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.product-card img{
+    width: 100%;
+    height: 100%;
+}
+/* Card hover footer */
+
+.card-hover-footer{
+    display: flex;
+    max-width: 80px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+    gap: 10px;
+}
+
+.card-hover-footer i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ---------------- Sección Info ---------------- */
+
+#info h2{
+    margin-top: 20px;
+    text-align: center;
+}
+.info-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+}
+
+.info-content > div{
+    display: grid;
+    row-gap: 10px;
+}
+
+.info-content a{
+    text-decoration: none;
+    color: white;
+}
+
+.problemas{
+    background-color: lightgray;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    grid-column: 3/4; /* Esto simplifica las dos líneas de arriba */
+    grid-row: 1/3;  /* Esto simplifica las dos líneas de arriba */
+}
+
+.problemas h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* --------------------------BREAKPOINTS----------------------------- */
+
+
+@media screen and (max-width: 800px){
+    .intro-content{
+        flex-direction: column-reverse;
+    }
+    .col-2 {
+        flex: none;
+        height: 300px;
+    }
+    .img-impresora, .img-cat, .img-pla {
+        width: 230px;
+    }
+
+    .productos-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* Breakpoint mobile */
+@media screen and (max-width:576px){
+
+    .productos-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .info-content > div{
+        text-align: center;
+    }
+
+
+}
